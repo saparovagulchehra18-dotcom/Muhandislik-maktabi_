@@ -1,0 +1,1019 @@
+[13.10.2026 20:56] Saparova Gulchehra: <!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#100719">
+  <meta name="description" content="Navoiy shahridagi Muhandislik maktabi — zamonaviy texnologiyalar, muhandislik va sifatli ta'lim.">
+  <title>Muhandislik maktabi | Navoiy</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #100719;
+      --bg2: #190d27;
+      --card: rgba(36, 20, 52, .78);
+      --purple: #a855f7;
+      --pink: #ff4fd8;
+      --lavender: #d9b8ff;
+      --text: #fbf7ff;
+      --muted: #b9a8c9;
+      --border: rgba(206, 151, 255, .2);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; scroll-padding-top: 85px; }
+
+    body {
+      background:
+        radial-gradient(ellipse at 15% 10%, rgba(129, 45, 190, .2), transparent 40%),
+        radial-gradient(ellipse at 90% 40%, rgba(255, 45, 185, .09), transparent 35%),
+        var(--bg);
+      color: var(--text);
+      font-family: Inter, Arial, sans-serif;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { display: block; width: 100%; object-fit: cover; }
+    button, input { font: inherit; }
+
+    .container { width: min(1160px, 91%); margin: auto; }
+
+    .stars {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      pointer-events: none;
+      opacity: .55;
+      background-image:
+        radial-gradient(2px 2px at 15% 25%, #fff, transparent),
+        radial-gradient(1px 1px at 45% 65%, #e9c9ff, transparent),
+        radial-gradient(2px 2px at 80% 15%, #ffb9f0, transparent),
+        radial-gradient(1px 1px at 72% 83%, #fff, transparent),
+        radial-gradient(2px 2px at 32% 90%, #c9a4ff, transparent);
+      background-size: 230px 230px;
+    }
+
+    .topline {
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--purple), var(--pink), transparent);
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(16, 7, 25, .91);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .navbar {
+      min-height: 76px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .brand { display: flex; align-items: center; gap: 12px; }
+
+    .brand-logo {
+      width: 45px;
+      height: 45px;
+      display: grid;
+      place-items: center;
+      border-radius: 15px;
+      background: linear-gradient(135deg, var(--purple), var(--pink));
+      box-shadow: 0 0 25px rgba(197, 76, 255, .3);
+      font-size: 23px;
+    }
+
+    .brand-name {
+      font-family: "Exo 2", sans-serif;
+      font-weight: 800;
+      font-size: 15px;
+      line-height: 1.3;
+    }
+
+    .brand-name span { color: var(--lavender); }
+
+    nav { display: flex; align-items: center; gap: 21px; }
+
+    nav a {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 600;
+      transition: .25s;
+    }
+
+    nav a:hover { color: var(--pink); }
+
+    .menu-btn {
+      display: none;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: var(--card);
+      color: white;
+      padding: 7px 12px;
+      cursor: pointer;
+    }
+
+    .hero {
+      min-height: 600px;
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      align-items: center;
+      gap: 45px;
+      padding-top: 70px;
+      padding-bottom: 75px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+[13.10.2026 20:56] Saparova Gulchehra: align-items: center;
+      gap: 8px;
+      border: 1px solid rgba(216, 169, 255, .32);
+      border-radius: 30px;
+      background: rgba(168, 85, 247, .1);
+      color: var(--lavender);
+      padding: 7px 14px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .6px;
+    }
+
+    .hero h1 {
+      margin: 24px 0 20px;
+      font-family: "Exo 2", sans-serif;
+      font-size: clamp(38px, 5.5vw, 67px);
+      line-height: 1.08;
+      letter-spacing: -1.5px;
+    }
+
+    .gradient-text {
+      background: linear-gradient(90deg, #d8b4fe, #ff5cdb, #bda4ff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero p { max-width: 570px; color: var(--muted); font-size: 16px; }
+
+    .actions { display: flex; flex-wrap: wrap; gap: 13px; margin-top: 30px; }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 9px;
+      padding: 12px 19px;
+      border-radius: 13px;
+      font-size: 13px;
+      font-weight: 800;
+      transition: transform .25s, box-shadow .25s;
+    }
+
+    .btn:hover { transform: translateY(-3px); }
+
+    .btn-primary {
+      color: white;
+      background: linear-gradient(110deg, #9238e8, #e63bb7);
+      box-shadow: 0 8px 30px rgba(197, 63, 222, .23);
+    }
+
+    .btn-secondary {
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.035);
+      color: var(--lavender);
+    }
+
+    .hero-note { margin-top: 24px; color: #a996bb; font-size: 12px; }
+
+    .hero-visual { position: relative; }
+
+    .hero-frame {
+      position: relative;
+      padding: 10px;
+      border-radius: 27px;
+      background: linear-gradient(135deg, var(--purple), transparent 45%, var(--pink));
+      box-shadow: 0 0 60px rgba(166, 70, 232, .16);
+      transform: rotate(1deg);
+    }
+
+    .hero-frame img {
+      height: 385px;
+      border-radius: 19px;
+      background: var(--bg2);
+    }
+
+    .floating-card {
+      position: absolute;
+      bottom: 25px;
+      left: -25px;
+      max-width: 235px;
+      padding: 16px;
+      border: 1px solid var(--border);
+      border-radius: 17px;
+      background: rgba(25, 13, 39, .95);
+      box-shadow: 0 12px 35px rgba(0,0,0,.25);
+      transform: rotate(-2deg);
+    }
+
+    .floating-card strong { display: block; color: var(--pink); font-size: 15px; }
+    .floating-card span { color: var(--muted); font-size: 12px; }
+
+    .section { padding: 80px 0; }
+
+    .section-heading { max-width: 690px; margin-bottom: 35px; }
+
+    .section-kicker {
+      color: var(--pink);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .section-heading h2 {
+      margin: 8px 0 12px;
+      font-family: "Exo 2", sans-serif;
+      font-size: clamp(28px, 4vw, 43px);
+      line-height: 1.2;
+    }
+
+    .section-heading p { color: var(--muted); font-size: 14px; }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 35px;
+      align-items: stretch;
+    }
+
+    .about-photo {
+      overflow: hidden;
+      min-height: 350px;
+      border-radius: 23px;
+      border: 1px solid var(--border);
+    }
+
+    .about-photo img { height: 100%; min-height: 350px; }
+
+    .about-content {
+      padding: 28px;
+      border: 1px solid var(--border);
+      border-radius: 23px;
+      background: linear-gradient(145deg, rgba(67, 35, 88, .4), rgba(26, 12, 38, .8));
+    }
+
+    .about-content h3 { font-family: "Exo 2", sans-serif; font-size: 23px; margin-bottom: 13px; }
+    .about-content p { color: var(--muted); font-size: 14px; margin-bottom: 17px; }
+
+    .info-list { display: grid; gap: 12px; margin-top: 23px; }
+
+    .info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      color: #eadcf8;
+      font-size: 13px;
+    }
+
+    .info-icon {
+      flex: 0 0 35px;
+      height: 35px;
+      display: grid;
+      place-items: center;
+      border-radius: 11px;
+      background: rgba(168, 85, 247, .16);
+      font-size: 17px;
+    }
+[13.10.2026 20:56] Saparova Gulchehra: .cards-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+
+    .feature-card {
+      padding: 24px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      background: var(--card);
+      transition: transform .25s, border-color .25s;
+    }
+
+    .feature-card:hover { transform: translateY(-5px); border-color: rgba(255,79,216,.55); }
+
+    .feature-icon {
+      width: 51px;
+      height: 51px;
+      display: grid;
+      place-items: center;
+      border-radius: 15px;
+      background: linear-gradient(135deg, rgba(168,85,247,.28), rgba(255,79,216,.14));
+      font-size: 25px;
+      margin-bottom: 17px;
+    }
+
+    .feature-card h3 { font-family: "Exo 2", sans-serif; font-size: 19px; margin-bottom: 9px; }
+    .feature-card p { color: var(--muted); font-size: 13px; }
+
+    .image-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+    .image-card {
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      background: var(--card);
+    }
+
+    .image-card img { height: 235px; transition: transform .4s; }
+    .image-card:hover img { transform: scale(1.04); }
+
+    .image-card-content { padding: 20px; }
+    .image-card-content h3 { font-family: "Exo 2", sans-serif; font-size: 20px; margin-bottom: 7px; }
+    .image-card-content p { color: var(--muted); font-size: 13px; }
+
+    .notice {
+      margin-top: 22px;
+      padding: 17px 20px;
+      border-left: 3px solid var(--pink);
+      border-radius: 0 12px 12px 0;
+      background: rgba(255,79,216,.06);
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .teacher-tools {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 24px;
+    }
+
+    .teacher-tools p { color: var(--muted); font-size: 13px; }
+
+    .search-box {
+      width: min(100%, 320px);
+      padding: 12px 15px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      outline: none;
+      background: rgba(35, 19, 50, .9);
+      color: white;
+    }
+
+    .search-box:focus { border-color: var(--pink); }
+    .search-box::placeholder { color: #9b87ab; }
+
+    .teacher-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; }
+
+    .teacher-card {
+      position: relative;
+      overflow: hidden;
+      padding: 22px 15px;
+      border: 1px solid var(--border);
+      border-radius: 19px;
+      background: linear-gradient(155deg, rgba(53, 29, 72, .8), rgba(25, 12, 37, .9));
+      text-align: center;
+    }
+
+    .teacher-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 20%;
+      width: 60%;
+      height: 2px;
+      background: linear-gradient(90deg, var(--purple), var(--pink));
+    }
+
+    .teacher-avatar {
+      width: 67px;
+      height: 67px;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 13px;
+      border: 2px solid rgba(255,79,216,.65);
+      border-radius: 50%;
+      background: linear-gradient(135deg, #6731a0, #c332a0);
+      box-shadow: 0 0 22px rgba(197, 76, 255, .15);
+      color: white;
+      font-family: "Exo 2", sans-serif;
+      font-size: 20px;
+      font-weight: 800;
+    }
+
+    .teacher-card h3 { font-size: 13px; line-height: 1.5; }
+    .teacher-card p { margin-top: 7px; color: var(--muted); font-size: 11px; }
+    .no-results { display: none; padding: 25px; color: var(--muted); text-align: center; }
+
+    .school-life {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .school-life img { height: 360px; border-radius: 23px; border: 1px solid var(--border); }
+
+    .life-list { display: grid; gap: 15px; }
+
+    .life-item {
+      display: flex;
+      gap: 14px;
+      padding: 17px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: rgba(36,20,52,.6);
+    }
+
+    .life-item h3 { font-size: 15px; margin-bottom: 4px; }
+    .life-item p { color: var(--muted); font-size: 12px; }
+[13.10.2026 20:56] Saparova Gulchehra: .social-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+    .social-card {
+      display: flex;
+      align-items: center;
+      gap: 19px;
+      padding: 25px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      background: var(--card);
+      transition: .25s;
+    }
+
+    .social-card:hover { transform: translateY(-4px); border-color: var(--pink); }
+
+    .social-logo {
+      width: 57px;
+      height: 57px;
+      flex-shrink: 0;
+      display: grid;
+      place-items: center;
+      border-radius: 17px;
+      background: linear-gradient(135deg, #7537c8, #ed3eb9);
+      font-size: 26px;
+    }
+
+    .social-card h3 { font-family: "Exo 2", sans-serif; font-size: 19px; }
+    .social-card p { color: var(--muted); font-size: 12px; margin: 3px 0 8px; }
+    .social-link { color: var(--lavender); font-size: 12px; font-weight: 800; }
+
+    .contact-panel {
+      padding: 36px;
+      border: 1px solid var(--border);
+      border-radius: 25px;
+      background:
+        radial-gradient(ellipse at 100% 0%, rgba(255,79,216,.13), transparent 45%),
+        linear-gradient(135deg, rgba(64,32,84,.65), rgba(25,12,37,.85));
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .contact-panel h2 { font-family: "Exo 2", sans-serif; font-size: 28px; margin-bottom: 8px; }
+    .contact-panel p { color: var(--muted); font-size: 13px; max-width: 650px; }
+
+    footer { border-top: 1px solid var(--border); padding: 25px 0; }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      flex-wrap: wrap;
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .footer-inner strong { color: var(--lavender); }
+
+    .back-top {
+      position: fixed;
+      right: 19px;
+      bottom: 19px;
+      z-index: 50;
+      width: 43px;
+      height: 43px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: #28153a;
+      color: white;
+      font-size: 20px;
+      box-shadow: 0 4px 22px rgba(0,0,0,.3);
+    }
+
+    .fade-in { animation: rise .8s ease both; }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(18px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 900px) {
+      nav { gap: 12px; }
+      nav a { font-size: 11px; }
+      .hero { gap: 25px; }
+      .teacher-grid { grid-template-columns: repeat(3, 1fr); }
+      .cards-3 { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 700px) {
+      .menu-btn { display: block; }
+      nav {
+        display: none;
+        position: absolute;
+        top: 76px;
+        left: 0;
+        right: 0;
+        padding: 20px 5%;
+        background: rgba(16,7,25,.98);
+        border-bottom: 1px solid var(--border);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 17px;
+      }
+      nav.open { display: flex; }
+      nav a { font-size: 14px; }
+      .hero { grid-template-columns: 1fr; padding-top: 48px; }
+      .hero h1 { font-size: 43px; }
+      .hero-visual { max-width: 520px; margin: 10px auto 0; width: 100%; }
+      .hero-frame img { height: 300px; }
+      .floating-card { left: -5px; bottom: 14px; }
+      .section { padding: 60px 0; }
+      .about-grid, .school-life { grid-template-columns: 1fr; }
+      .about-photo, .about-photo img { min-height: 260px; }
+      .cards-3 { grid-template-columns: 1fr; }
+      .image-grid, .social-grid { grid-template-columns: 1fr; }
+      .teacher-grid { grid-template-columns: repeat(2, 1fr); }
+      .school-life img { height: 270px; }
+      .contact-panel { flex-direction: column; align-items: flex-start; padding: 25px; }
+      .contact-panel h2 { font-size: 24px; }
+    }
+
+    @media (max-width: 370px) {
+[13.10.2026 20:56] Saparova Gulchehra: .brand-name { font-size: 12px; }
+      .brand-logo { width: 39px; height: 39px; }
+      .teacher-grid { grid-template-columns: 1fr 1fr; gap: 9px; }
+      .teacher-card { padding: 17px 9px; }
+      .teacher-card h3 { font-size: 11px; }
+      .hero h1 { font-size: 36px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="stars"></div>
+  <div class="topline"></div>
+
+  <header>
+    <div class="container navbar">
+      <a href="#bosh-sahifa" class="brand">
+        <div class="brand-logo">✦</div>
+        <div class="brand-name">MUHANDISLIK<br><span>MAKTABI · NAVOIY</span></div>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Menyuni ochish">☰</button>
+
+      <nav id="navMenu">
+        <a href="#bosh-sahifa">Bosh sahifa</a>
+        <a href="#maktab">Maktab haqida</a>
+        <a href="#yonalishlar">Yo‘nalishlar</a>
+        <a href="#muhit">Ta’lim muhiti</a>
+        <a href="#ustozlar">Ustozlar</a>
+        <a href="#aloqa">Aloqa</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container hero" id="bosh-sahifa">
+      <div class="fade-in">
+        <div class="eyebrow">✦ KELAJAK SARI BIR QADAM</div>
+
+        <h1>
+          Bilimdan<br>
+          <span class="gradient-text">kelajakka</span><br>
+          yo‘l ochamiz.
+        </h1>
+
+        <p>
+          Navoiy shahridagi Muhandislik maktabi — muhandislik,
+          zamonaviy texnologiyalar va sifatli ta’limga yo‘naltirilgan
+          ta’lim maskani. Bu yerda bilim olish, izlanish va yangi
+          g‘oyalar sari intilish muhim o‘rin tutadi.
+        </p>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="#maktab">Maktab bilan tanishish ↗</a>
+          <a class="btn btn-secondary" href="#ustozlar">Ustozlarimiz →</a>
+        </div>
+
+        <div class="hero-note">✧ Bilim · Izlanish · Muhandislik · Kelajak</div>
+      </div>
+
+      <div class="hero-visual fade-in">
+        <div class="hero-frame">
+          <img
+            src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1100&q=85"
+            alt="Kompyuter va texnologiyalar bilan ishlayotgan mutaxassis"
+            fetchpriority="high"
+            onerror="this.style.display='none'">
+        </div>
+        <div class="floating-card">
+          <strong>✦ Zamonaviy fikrlash</strong>
+          <span>Bilim, ijodkorlik va yangi imkoniyatlar sari.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="maktab">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-kicker">01 — BIZ HAQIMIZDA</div>
+          <h2>Maktabimiz bilan <span class="gradient-text">tanishib chiqing</span></h2>
+          <p>Maktabning asosiy maqsadi va faoliyat yo‘nalishi haqida qisqacha ma’lumot.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-photo">
+            <img
+              src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1000&q=85"
+              alt="Ta’lim jarayoni aks etgan namunaviy surat"
+              loading="lazy"
+              onerror="this.style.display='none'">
+          </div>
+
+          <div class="about-content">
+            <h3>Navoiy shahridagi Muhandislik maktabi</h3>
+            <p>
+              Muhandislik, zamonaviy texnologiyalar va sifatli ta’limga
+              yo‘naltirilgan maktab. Maktab haqida ma’lumot berish,
+              ta’lim yo‘nalishlarini tanishtirish va ustozlar jamoasini
+              ko‘rsatish ushbu saytning asosiy vazifalaridandir.
+            </p>
+            <p>
+              Muhandislik tafakkuri savol berish, muammoni tahlil qilish,
+              yechim topish va o‘z g‘oyasini amalda sinab ko‘rish bilan
+              chambarchas bog‘liq.
+            </p>
+
+            <div class="info-list">
+[13.10.2026 20:56] Saparova Gulchehra: <div class="info-item">
+                <div class="info-icon">📍</div>
+                <div><strong>Joylashuv</strong><br>Navoiy shahri, O‘zbekiston</div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">📅</div>
+                <div><strong>Tashkil topgan sana</strong><br>2026-yil 2-sentabr</div>
+              </div>
+              <div class="info-item">
+                <div class="info-icon">🎯</div>
+                <div><strong>Asosiy yo‘nalish</strong><br>Muhandislik, texnologiyalar va sifatli ta’lim</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="yonalishlar">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-kicker">02 — TA’LIM YO‘NALISHLARI</div>
+          <h2>Bilim va <span class="gradient-text">yangi g‘oyalar</span></h2>
+          <p>Muhandislikka qiziqadigan o‘quvchilar uchun muhim bo‘lgan bilim sohalari.</p>
+        </div>
+
+        <div class="cards-3">
+          <article class="feature-card">
+            <div class="feature-icon">📐</div>
+            <h3>Matematika</h3>
+            <p>Mantiqiy fikrlash, hisoblash, masalalarni tahlil qilish va yechim topish ko‘nikmalarini rivojlantirish.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">⚛️</div>
+            <h3>Fizika</h3>
+            <p>Tabiat hodisalari, harakat, energiya, kuch va texnik qurilmalarning ishlash tamoyillarini o‘rganish.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">💻</div>
+            <h3>Informatika</h3>
+            <p>Algoritmik fikrlash, raqamli savodxonlik va dasturlash asoslari bilan tanishish.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">🤖</div>
+            <h3>Robototexnika</h3>
+            <p>Robotlar, avtomatlashtirish va texnik yechimlar qanday ishlashini o‘rganishga qiziqish uyg‘otish.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">🧪</div>
+            <h3>Tabiiy fanlar</h3>
+            <p>Kimyo va biologiya orqali tabiatdagi jarayonlarni kuzatish, tushunish va ilmiy fikrlash.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">🌐</div>
+            <h3>Tillar va muloqot</h3>
+            <p>O‘z fikrini aniq ifodalash, matn bilan ishlash va turli tillarda bilim olishga intilish.</p>
+          </article>
+        </div>
+
+        <div class="notice">
+          Eslatma: bu bo‘lim maktabning muhandislik yo‘nalishiga mos fanlar haqida
+          umumiy tanishtiruvdir. Aniq dars jadvali va mavjud to‘garaklar maktab
+          ma’muriyati tasdiqlagan ma’lumotlar bilan to‘ldirilishi mumkin.
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="muhit">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-kicker">03 — TA’LIM MUHITI</div>
+          <h2>O‘rganish, izlanish va <span class="gradient-text">yaratish</span></h2>
+          <p>Bilim olish jarayonida muhim bo‘lgan imkoniyatlar va odatlar.</p>
+        </div>
+
+        <div class="image-grid">
+          <article class="image-card">
+            <img
+              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1000&q=85"
+              alt="Raqamli texnologiyalar bilan ishlash"
+              loading="lazy"
+              onerror="this.style.display='none'">
+            <div class="image-card-content">
+              <h3>Raqamli dunyo</h3>
+              <p>Kompyuter savodxonligi, axborotni izlash va texnologiyalardan mas’uliyat bilan foydalanish bugungi ta’limning muhim qismidir.</p>
+            </div>
+          </article>
+[13.10.2026 20:56] Saparova Gulchehra: <article class="image-card">
+            <img
+              src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1000&q=85"
+              alt="Birgalikda fikr almashayotgan jamoa"
+              loading="lazy"
+              onerror="this.style.display='none'">
+            <div class="image-card-content">
+              <h3>Jamoaviy ishlash</h3>
+              <p>Fikr almashish, vazifalarni taqsimlash va birgalikda yechim izlash o‘quvchilarning hamkorlik ko‘nikmalarini rivojlantiradi.</p>
+            </div>
+          </article>
+
+          <article class="image-card">
+            <img
+              src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=1000&q=85"
+              alt="Texnik ish jarayoni aks etgan namunaviy surat"
+              loading="lazy"
+              onerror="this.style.display='none'">
+            <div class="image-card-content">
+              <h3>Amaliy fikrlash</h3>
+              <p>Nazariy bilimni misollar, kuzatishlar va loyihalar orqali tushunish muhandislik tafakkurini shakllantirishga yordam beradi.</p>
+            </div>
+          </article>
+
+          <article class="image-card">
+            <img
+              src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1000&q=85"
+              alt="Sinfda ta’lim olish jarayoni"
+              loading="lazy"
+              onerror="this.style.display='none'">
+            <div class="image-card-content">
+              <h3>Bilim olish madaniyati</h3>
+              <p>Muntazam o‘qish, savol berish, mustaqil izlanish va o‘z ustida ishlash har bir o‘quvchi uchun muhim odatlardir.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="notice">
+          Rasmlar internetdan olingan namunaviy suratlar bo‘lib, maktabning haqiqiy
+          binosi yoki jihozlarini ko‘rsatishi shart emas. Keyinchalik ularni
+          maktabning o‘z suratlari bilan almashtirish mumkin.
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="ustozlar">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-kicker">04 — BIZNING JAMOA</div>
+          <h2>Ustozlarimiz — <span class="gradient-text">bilim yo‘lboshchilari</span></h2>
+          <p>Ustozlar ro‘yxati. Qidiruv orqali ism bo‘yicha kerakli ustozni topishingiz mumkin.</p>
+        </div>
+
+        <div class="teacher-tools">
+          <p>Ustozlar ro‘yxati: <strong id="teacherCount">21 nafar</strong></p>
+          <input
+            class="search-box"
+            id="teacherSearch"
+            type="search"
+            placeholder="🔎 Ustoz ismini yozing..."
+            aria-label="Ustozlarni ism bo‘yicha qidirish">
+        </div>
+
+        <div class="teacher-grid" id="teacherGrid"></div>
+        <div class="no-results" id="noResults">Bu ism bo‘yicha ustoz topilmadi.</div>
+
+        <div class="notice">
+          Ustozlarning haqiqiy portretlari va fanlarini qo‘shish uchun ularning
+          tasdiqlangan suratlari hamda to‘liq ism-familiyasi kerak bo‘ladi.
+          Hozircha doira ichidagi belgilar vaqtinchalik dizayn sifatida ishlatilgan.
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container school-life">
+        <div>
+          <div class="section-kicker">05 — MAKTAB HAYOTI</div>
+          <h2 style="font-family:'Exo 2',sans-serif;font-size:clamp(28px,4vw,42px);line-height:1.2;margin:10px 0 18px">
+            Har kuni — <span class="gradient-text">yangi imkoniyat</span>
+          </h2>
+          <p style="color:var(--muted);font-size:14px;margin-bottom:24px">
+            Maktab hayoti faqat darslardan iborat emas. Savol berish, o‘z fikrini
+            bildirish, birgalikda ishlash va yangi narsalarni o‘rganish ham
+            ta’limning muhim qismidir.
+          </p>
+[13.10.2026 20:56] Saparova Gulchehra: <div class="life-list">
+            <div class="life-item">
+              <div class="info-icon">📚</div>
+              <div>
+                <h3>Mustaqil ta’lim</h3>
+                <p>Kitob o‘qish, mavzularni takrorlash va qo‘shimcha manbalardan foydalanish.</p>
+              </div>
+            </div>
+
+            <div class="life-item">
+              <div class="info-icon">💡</div>
+              <div>
+                <h3>Ijodiy fikrlash</h3>
+                <p>Yangi g‘oyalarni taklif qilish, savollarga javob izlash va muammolarni tahlil qilish.</p>
+              </div>
+            </div>
+
+            <div class="life-item">
+              <div class="info-icon">🤝</div>
+              <div>
+                <h3>Hamkorlik</h3>
+                <p>Sinfdoshlar bilan fikr almashish, o‘zaro yordam va jamoada ishlash.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <img
+          src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1000&q=85"
+          alt="Birgalikda o‘rganayotgan yoshlar aks etgan namunaviy surat"
+          loading="lazy"
+          onerror="this.style.display='none'">
+      </div>
+    </section>
+
+    <section class="section" id="aloqa">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-kicker">06 — BIZ BILAN ALOQADA BO‘LING</div>
+          <h2>Maktab yangiliklarini <span class="gradient-text">kuzatib boring</span></h2>
+          <p>Maktabning ijtimoiy tarmoqlaridagi sahifalariga o‘tish uchun quyidagi havolalardan foydalaning.</p>
+        </div>
+
+        <div class="social-grid">
+          <a class="social-card"
+             href="https://t.me/Muhandislik_maktabi_Navoiy"
+             target="_blank"
+             rel="noopener noreferrer">
+            <div class="social-logo">✈</div>
+            <div>
+              <h3>Telegram</h3>
+              <p>Maktabning Telegram sahifasi</p>
+              <span class="social-link">Kanalga o‘tish ↗</span>
+            </div>
+          </a>
+
+          <a class="social-card"
+             href="https://instagram.com/navoiy_muhandislik_maktabi"
+             target="_blank"
+             rel="noopener noreferrer">
+            <div class="social-logo">◎</div>
+            <div>
+              <h3>Instagram</h3>
+              <p>Maktabning Instagram sahifasi</p>
+              <span class="social-link">Sahifani ochish ↗</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="contact-panel" style="margin-top:28px">
+          <div>
+            <h2>Kelajak shu yerdan boshlanadi ✦</h2>
+            <p>
+              Navoiy shahridagi Muhandislik maktabi haqida ma’lumotlar,
+              ta’lim yo‘nalishlari va ustozlar jamoasi bilan tanishing.
+              Sayt maktab haqidagi ma’lumotlarni bir joyda jamlash uchun yaratilgan.
+            </p>
+          </div>
+          <a class="btn btn-primary"
+             href="https://t.me/Muhandislik_maktabi_Navoiy"
+             target="_blank"
+             rel="noopener noreferrer">Bizni kuzating ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div><strong>✦ MUHANDISLIK MAKTABI</strong> · Navoiy shahri</div>
+      <div>© <span id="year"></span> · Bilim, izlanish va kelajak</div>
+    </div>
+  </footer>
+
+  <a class="back-top" href="#bosh-sahifa" aria-label="Sahifa boshiga qaytish">↑</a>
+
+  <script>
+    const teachers = [
+      "Odilov Tuxtamurod",
+      "Ra’no Ruziqulova",
+      "Oybek Sulaymonov",
+      "Rahmatova Dilrabo",
+      "Umarov Xudoyorxon",
+      "Dilrabo Olimova",
+      "Ozoda Sa’dinova",
+      "Ashurova Marguba",
+      "Madina Davrobova",
+      "Zafar Ne’matov",
+      "Komila Baxodirovna",
+      "Anvar Shodiyev",
+      "Shoxrux Abduxalilov",
+      "Sh. Fayzullayevna Umarova",
+      "Akmal",
+      "Hudoyberdiyev Zuhriddin",
+      "Saodat Turdiyeva",
+      "Durdona Farxodovna",
+      "Ravshan Kobilov",
+      "Jabborova",
+      "Zebiniso"
+    ];
+[13.10.2026 20:56] Saparova Gulchehra: const teacherGrid = document.getElementById("teacherGrid");
+    const teacherSearch = document.getElementById("teacherSearch");
+    const noResults = document.getElementById("noResults");
+    const teacherCount = document.getElementById("teacherCount");
+
+    function getInitials(name) {
+      const parts = name.trim().split(/\s+/);
+      if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();
+      return (parts[0][0] + parts[1][0]).toUpperCase();
+    }
+
+    function renderTeachers() {
+      const query = teacherSearch.value.trim().toLocaleLowerCase("uz");
+
+      const filtered = teachers.filter(name =>
+        name.toLocaleLowerCase("uz").includes(query)
+      );
+
+      teacherGrid.innerHTML = filtered.map(name => 
+        <article class="teacher-card">
+          <div class="teacher-avatar">${getInitials(name)}</div>
+          <h3>${name}</h3>
+          <p>Maktab ustozlari jamoasi</p>
+        </article>
+      ).join("");
+
+      teacherCount.textContent = ${filtered.length} / ${teachers.length} nafar;
+      noResults.style.display = filtered.length ? "none" : "block";
+    }
+
+    teacherSearch.addEventListener("input", renderTeachers);
+    renderTeachers();
+
+    const menuBtn = document.getElementById("menuBtn");
+    const navMenu = document.getElementById("navMenu");
+
+    menuBtn.addEventListener("click", () => {
+      navMenu.classList.toggle("open");
+      menuBtn.textContent = navMenu.classList.contains("open") ? "✕" : "☰";
+    });
+
+    navMenu.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        navMenu.classList.remove("open");
+        menuBtn.textContent = "☰";
+      });
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
