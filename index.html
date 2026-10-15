@@ -34,12 +34,12 @@
   <style>
     body { font-family: 'Plus Jakarta Sans', sans-serif; }
     .glass {
-      background: rgba(255, 255, 255, 0.7);
+      background: rgba(255, 255, 255, 0.75);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
     }
     .dark .glass {
-      background: rgba(15, 23, 42, 0.75);
+      background: rgba(15, 23, 42, 0.8);
     }
     .teacher-card {
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -68,7 +68,7 @@
         </a>
 
         <!-- Desktop Menu -->
-        <nav class="hidden md:flex items-center gap-8 font-medium text-sm">
+        <nav class="hidden md:flex items-center gap-6 font-medium text-sm">
           <a href="#about" class="hover:text-brand-600 dark:hover:text-accent-400 transition-colors">Biz Haqimizda</a>
           <a href="#schedule" class="hover:text-brand-600 dark:hover:text-accent-400 transition-colors">Kun Tartibi</a>
           <a href="#teachers" class="hover:text-brand-600 dark:hover:text-accent-400 transition-colors">Ustozlar</a>
@@ -76,8 +76,16 @@
           <a href="#admission" class="hover:text-brand-600 dark:hover:text-accent-400 transition-colors">Qabul</a>
         </nav>
 
-        <!-- Actions -->
+        <!-- Actions & Social Links -->
         <div class="flex items-center gap-3">
+          <!-- Social Icons -->
+          <a href="https://t.me/Muhandislik_maktabi_Navoiy" target="_blank" title="Telegram" class="w-10 h-10 rounded-xl bg-sky-500/10 text-sky-500 flex items-center justify-center hover:bg-sky-500 hover:text-white transition-all">
+            <i class="fa-brands fa-telegram text-lg"></i>
+          </a>
+          <a href="https://instagram.com/navoiy_muhandislik_maktabi?mdxt=MW00dnl4b3hrYmt5ZQ%3D%3D" target="_blank" title="Instagram" class="w-10 h-10 rounded-xl bg-pink-500/10 text-pink-500 flex items-center justify-center hover:bg-pink-500 hover:text-white transition-all">
+            <i class="fa-brands fa-instagram text-lg"></i>
+          </a>
+
           <!-- Theme Toggle Button -->
           <button id="themeToggle" class="w-10 h-10 rounded-xl bg-slate-200/80 dark:bg-slate-800 flex items-center justify-center text-slate-700 dark:text-slate-200 hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors">
             <i class="fa-solid fa-moon dark:hidden"></i>
@@ -105,7 +113,11 @@
       <a href="#teachers" class="block py-2 font-medium text-slate-700 dark:text-slate-200">Ustozlar</a>
       <a href="#test" class="block py-2 font-medium text-slate-700 dark:text-slate-200">Bilimni Sinash</a>
       <a href="#admission" class="block py-2 font-medium text-slate-700 dark:text-slate-200">Qabul 2026</a>
-      <a href="https://piima.uz" target="_blank" class="w-full text-center block bg-brand-600 text-white font-semibold py-3 rounded-xl mt-4">
+      <div class="flex gap-3 pt-2">
+        <a href="https://t.me/Muhandislik_maktabi_Navoiy" target="_blank" class="flex-1 text-center bg-sky-500 text-white font-semibold py-2.5 rounded-xl"><i class="fa-brands fa-telegram"></i> Telegram</a>
+        <a href="https://instagram.com/navoiy_muhandislik_maktabi?mdxt=MW00dnl4b3hrYmt5ZQ%3D%3D" target="_blank" class="flex-1 text-center bg-pink-600 text-white font-semibold py-2.5 rounded-xl"><i class="fa-brands fa-instagram"></i> Instagram</a>
+      </div>
+      <a href="https://piima.uz" target="_blank" class="w-full text-center block bg-brand-600 text-white font-semibold py-3 rounded-xl mt-2">
         piima.uz Orqali Ariza
       </a>
     </div>
@@ -127,7 +139,7 @@
           </h1>
           
           <p class="text-slate-600 dark:text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
-            Navoiy Muhandislik Maktabi — zamonaviy texnologiyalar, aniq fanlar va mantiqiy fikrlashni yuksak darajada rivojlantiruvchi ixtisoslashtirilgan ta'lim dargohi.
+            Navoiy Muhandislik Maktabi — zamonaviy texnologiyalar, aniq fanlar va mantiqiy fikrlashni yuksak darajada rivojlantiruvchi ixtisaslashtirilgan ta'lim dargohi.
           </p>
 
           <!-- Badges / Stats -->
@@ -158,14 +170,14 @@
           </div>
         </div>
 
-        <!-- Right Gallery Image -->
+        <!-- Right Uniform Students Image -->
         <div class="lg:col-span-5 relative">
           <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white dark:border-slate-800">
-            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1200&auto=format&fit=crop" alt="Maktab o'quvchilari va dars jarayoni" class="w-full h-[420px] object-cover hover:scale-105 transition-transform duration-700">
+            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1200&auto=format&fit=crop" alt="Bir xil maktab formasidagi o'quvchilar" class="w-full h-[420px] object-cover hover:scale-105 transition-transform duration-700">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex flex-col justify-end p-6 text-white">
-              <span class="bg-brand-600/90 text-white text-xs font-semibold px-3 py-1 rounded-full w-fit mb-2">Zamonaviy Muhit</span>
-              <h3 class="text-xl font-bold">Iqtidorli Yoshlar Jamlangan Maskon</h3>
-              <p class="text-xs text-slate-300 mt-1">Yagona maktab formasi, chuqurlashtirilgan STEM fanlari hamda robototexnika laboratoriyalari.</p>
+              <span class="bg-brand-600/90 text-white text-xs font-semibold px-3 py-1 rounded-full w-fit mb-2">Yagona Maktab Formasi</span>
+              <h3 class="text-xl font-bold">Intizom va Zamonaviy Ta'lim</h3>
+              <p class="text-xs text-slate-300 mt-1">O'quvchilar uchun bir xil maktab formasi, qulay laboratoriyalar va yuqori darajadagi muhit.</p>
             </div>
           </div>
         </div>
@@ -319,7 +331,6 @@
       <!-- Teachers Grid -->
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         
-        <!-- 1 -->
         <div class="teacher-card p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/60 shadow-sm">
           <div class="flex items-center gap-3 mb-3">
             <div class="w-10 h-10 rounded-xl bg-brand-500/10 text-brand-600 dark:text-accent-400 flex items-center justify-center font-bold">
@@ -331,7 +342,6 @@
           <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Matematika va mantiq fani o'qituvchisi</p>
         </div>
 
-        <!-- 2 -->
         <div class="teacher-card p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/60 shadow-sm">
           <div class="flex items-center gap-3 mb-3">
             <div class="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-500 flex items-center justify-center font-bold">
@@ -343,7 +353,6 @@
           <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Informatika va robototexnika mutaxassisi</p>
         </div>
 
-        <!-- 3 -->
         <div class="teacher-card p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/60 shadow-sm">
           <div class="flex items-center gap-3 mb-3">
             <div class="w-10 h-10 rounded-xl bg-brand-500/10 text-brand-600 dark:text-accent-400 flex items-center justify-center font-bold">
@@ -355,7 +364,6 @@
           <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Olimpiada va murakkab masalalar ustoz</p>
         </div>
 
-        <!-- 4 -->
         <div class="teacher-card p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/60 shadow-sm">
           <div class="flex items-center gap-3 mb-3">
             <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-500 flex items-center justify-center font-bold">
@@ -367,7 +375,6 @@
           <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Fizika fani o'qituvchisi</p>
         </div>
 
-        <!-- 5 -->
         <div class="teacher-card p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/60 shadow-sm">
           <div class="flex items-center gap-3 mb-3">
             <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-500 flex items-center justify-center font-bold">
@@ -379,7 +386,6 @@
           <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Fizika va amaliy tajriba ustoz</p>
         </div>
 
-        <!-- 6 -->
         <div class="teacher-card p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/60 shadow-sm">
           <div class="flex items-center gap-3 mb-3">
             <div class="w-10 h-10 rounded-xl bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 flex items-center justify-center font-bold">
@@ -391,7 +397,6 @@
           <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Maktab tajribali o'qituvchisi</p>
         </div>
 
-        <!-- 7 -->
         <div class="teacher-card p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/60 shadow-sm">
           <div class="flex items-center gap-3 mb-3">
             <div class="w-10 h-10 rounded-xl bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 flex items-center justify-center font-bold">
@@ -403,7 +408,6 @@
           <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Maktab tajribali o'qituvchisi</p>
         </div>
 
-        <!-- 8 -->
         <div class="teacher-card p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/60 shadow-sm">
           <div class="flex items-center gap-3 mb-3">
             <div class="w-10 h-10 rounded-xl bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 flex items-center justify-center font-bold">
@@ -415,7 +419,6 @@
           <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Maktab tajribali o'qituvchisi</p>
         </div>
 
-        <!-- 9 -->
         <div class="teacher-card p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/60 shadow-sm">
           <div class="flex items-center gap-3 mb-3">
             <div class="w-10 h-10 rounded-xl bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 flex items-center justify-center font-bold">
@@ -427,7 +430,6 @@
           <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Maktab tajribali o'qituvchisi</p>
         </div>
 
-        <!-- 10 -->
         <div class="teacher-card p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/60 shadow-sm">
           <div class="flex items-center gap-3 mb-3">
             <div class="w-10 h-10 rounded-xl bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 flex items-center justify-center font-bold">
@@ -439,7 +441,6 @@
           <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Maktab tajribali o'qituvchisi</p>
         </div>
 
-        <!-- 11 -->
         <div class="teacher-card p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/60 shadow-sm">
           <div class="flex items-center gap-3 mb-3">
             <div class="w-10 h-10 rounded-xl bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 flex items-center justify-center font-bold">
@@ -451,7 +452,6 @@
           <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Maktab tajribali o'qituvchisi</p>
         </div>
 
-        <!-- 12 -->
         <div class="teacher-card p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/60 shadow-sm">
           <div class="flex items-center gap-3 mb-3">
             <div class="w-10 h-10 rounded-xl bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 flex items-center justify-center font-bold">
@@ -463,7 +463,6 @@
           <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Maktab tajribali o'qituvchisi</p>
         </div>
 
-        <!-- 13 -->
         <div class="teacher-card p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/60 shadow-sm">
           <div class="flex items-center gap-3 mb-3">
             <div class="w-10 h-10 rounded-xl bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 flex items-center justify-center font-bold">
@@ -475,7 +474,6 @@
           <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Maktab tajribali o'qituvchisi</p>
         </div>
 
-        <!-- 14 -->
         <div class="teacher-card p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/60 shadow-sm">
           <div class="flex items-center gap-3 mb-3">
             <div class="w-10 h-10 rounded-xl bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 flex items-center justify-center font-bold">
@@ -487,7 +485,6 @@
           <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Maktab tajribali o'qituvchisi</p>
         </div>
 
-        <!-- 15 -->
         <div class="teacher-card p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/60 shadow-sm">
           <div class="flex items-center gap-3 mb-3">
             <div class="w-10 h-10 rounded-xl bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 flex items-center justify-center font-bold">
@@ -499,7 +496,6 @@
           <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Maktab tajribali o'qituvchisi</p>
         </div>
 
-        <!-- 16 -->
         <div class="teacher-card p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/60 shadow-sm">
           <div class="flex items-center gap-3 mb-3">
             <div class="w-10 h-10 rounded-xl bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 flex items-center justify-center font-bold">
@@ -511,7 +507,6 @@
           <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Maktab tajribali o'qituvchisi</p>
         </div>
 
-        <!-- 17 -->
         <div class="teacher-card p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/60 shadow-sm">
           <div class="flex items-center gap-3 mb-3">
             <div class="w-10 h-10 rounded-xl bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 flex items-center justify-center font-bold">
@@ -523,7 +518,6 @@
           <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Maktab tajribali o'qituvchisi</p>
         </div>
 
-        <!-- 18 -->
         <div class="teacher-card p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/60 shadow-sm">
           <div class="flex items-center gap-3 mb-3">
             <div class="w-10 h-10 rounded-xl bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 flex items-center justify-center font-bold">
@@ -535,7 +529,6 @@
           <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Maktab tajribali o'qituvchisi</p>
         </div>
 
-        <!-- 19 -->
         <div class="teacher-card p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/60 shadow-sm">
           <div class="flex items-center gap-3 mb-3">
             <div class="w-10 h-10 rounded-xl bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 flex items-center justify-center font-bold">
@@ -547,7 +540,6 @@
           <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Maktab tajribali o'qituvchisi</p>
         </div>
 
-        <!-- 20 -->
         <div class="teacher-card p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/60 shadow-sm">
           <div class="flex items-center gap-3 mb-3">
             <div class="w-10 h-10 rounded-xl bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 flex items-center justify-center font-bold">
@@ -559,7 +551,6 @@
           <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Maktab tajribali o'qituvchisi</p>
         </div>
 
-        <!-- 21 -->
         <div class="teacher-card p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/60 shadow-sm">
           <div class="flex items-center gap-3 mb-3">
             <div class="w-10 h-10 rounded-xl bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 flex items-center justify-center font-bold">
@@ -896,6 +887,16 @@
           <div class="text-white font-bold text-base">Navoiy Muhandislik Maktabi</div>
           <div class="text-xs text-slate-500">2026-yil 2-sentyabrda faoliyat boshlagan</div>
         </div>
+      </div>
+
+      <!-- Footer Social Links -->
+      <div class="flex items-center gap-4">
+        <a href="https://t.me/Muhandislik_maktabi_Navoiy" target="_blank" class="text-sky-400 hover:text-sky-300 text-sm font-semibold flex items-center gap-2">
+          <i class="fa-brands fa-telegram text-lg"></i> Telegram kanal
+        </a>
+        <a href="https://instagram.com/navoiy_muhandislik_maktabi?mdxt=MW00dnl4b3hrYmt5ZQ%3D%3D" target="_blank" class="text-pink-400 hover:text-pink-300 text-sm font-semibold flex items-center gap-2">
+          <i class="fa-brands fa-instagram text-lg"></i> Instagram sahifa
+        </a>
       </div>
 
       <p class="text-xs text-slate-500 text-center md:text-right">
