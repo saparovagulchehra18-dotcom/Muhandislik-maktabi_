@@ -68,10 +68,11 @@
         </a>
 
         <!-- Desktop Menu -->
-        <nav class="hidden md:flex items-center gap-6 font-medium text-sm">
+        <nav class="hidden lg:flex items-center gap-6 font-medium text-sm">
           <a href="#about" class="hover:text-brand-600 dark:hover:text-accent-400 transition-colors">Biz Haqimizda</a>
           <a href="#schedule" class="hover:text-brand-600 dark:hover:text-accent-400 transition-colors">Kun Tartibi</a>
           <a href="#teachers" class="hover:text-brand-600 dark:hover:text-accent-400 transition-colors">Ustozlar</a>
+          <a href="#library" class="hover:text-brand-600 dark:hover:text-accent-400 transition-colors">Kutubxona</a>
           <a href="#test" class="hover:text-brand-600 dark:hover:text-accent-400 transition-colors">Bilimni Sinash</a>
           <a href="#admission" class="hover:text-brand-600 dark:hover:text-accent-400 transition-colors">Qabul</a>
         </nav>
@@ -99,7 +100,7 @@
           </a>
 
           <!-- Mobile menu button -->
-          <button id="mobileMenuBtn" class="md:hidden w-10 h-10 rounded-xl bg-slate-200/80 dark:bg-slate-800 flex items-center justify-center text-slate-700 dark:text-slate-200">
+          <button id="mobileMenuBtn" class="lg:hidden w-10 h-10 rounded-xl bg-slate-200/80 dark:bg-slate-800 flex items-center justify-center text-slate-700 dark:text-slate-200">
             <i class="fa-solid fa-bars text-lg"></i>
           </button>
         </div>
@@ -107,10 +108,11 @@
     </div>
 
     <!-- Mobile Navigation -->
-    <div id="mobileMenu" class="hidden md:hidden border-t border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-slate-900/95 backdrop-blur-lg px-4 pt-4 pb-6 space-y-3">
+    <div id="mobileMenu" class="hidden lg:hidden border-t border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-slate-900/95 backdrop-blur-lg px-4 pt-4 pb-6 space-y-3">
       <a href="#about" class="block py-2 font-medium text-slate-700 dark:text-slate-200">Biz Haqimizda</a>
       <a href="#schedule" class="block py-2 font-medium text-slate-700 dark:text-slate-200">Kun Tartibi</a>
       <a href="#teachers" class="block py-2 font-medium text-slate-700 dark:text-slate-200">Ustozlar</a>
+      <a href="#library" class="block py-2 font-medium text-slate-700 dark:text-slate-200">Kutubxona</a>
       <a href="#test" class="block py-2 font-medium text-slate-700 dark:text-slate-200">Bilimni Sinash</a>
       <a href="#admission" class="block py-2 font-medium text-slate-700 dark:text-slate-200">Qabul 2026</a>
       <div class="flex gap-3 pt-2">
@@ -139,7 +141,7 @@
           </h1>
           
           <p class="text-slate-600 dark:text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
-            Navoiy Muhandislik Maktabi — zamonaviy texnologiyalar, aniq fanlar va mantiqiy fikrlashni yuksak darajada rivojlantiruvchi ixtisaslashtirilgan ta'lim dargohi.
+            Navoiy Muhandislik Maktabi — zamonaviy texnologiyalar, aniq fanlar va mantiqiy fikrlashni yuksak darajada rivojlantiruvchi ixtisoslashtirilgan ta'lim dargohi.
           </p>
 
           <!-- Badges / Stats -->
@@ -566,6 +568,137 @@
     </div>
   </section>
 
+  <!-- LIBRARY SECTION -->
+  <section id="library" class="py-20 bg-slate-100/70 dark:bg-slate-900/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="px-3 py-1 rounded-full bg-brand-500/10 text-brand-600 dark:text-accent-400 text-xs font-bold uppercase tracking-wider">
+          <i class="fa-solid fa-book-open mr-1"></i> Elektron Resurslar
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mt-2">Maktabimiz Elektron Kutubxonasi</h2>
+        <p class="text-slate-600 dark:text-slate-400 mt-3 text-base">
+          O‘zbek va jahon adabiyotining sara asarlari to‘plami. O‘qing, ma’naviy va intellektual dunyongizni boyiting!
+        </p>
+
+        <!-- Category Filters -->
+        <div class="flex flex-wrap justify-center gap-2 mt-6">
+          <button onclick="filterBooks('all')" id="filter-all" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-brand-600 text-white shadow-md">
+            Barchasi
+          </button>
+          <button onclick="filterBooks('uzbek')" id="filter-uzbek" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-slate-200 border border-slate-200 dark:border-slate-700">
+            O‘zbek Adabiyoti
+          </button>
+          <button onclick="filterBooks('world')" id="filter-world" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-slate-200 border border-slate-200 dark:border-slate-700">
+            Jahon Adabiyoti
+          </button>
+        </div>
+      </div>
+
+      <!-- Books Grid -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Book 1 -->
+        <div class="book-card uzbek p-6 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex flex-col justify-between shadow-sm hover:shadow-md transition-all">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-[10px] uppercase font-bold px-2.5 py-1 rounded-md bg-amber-500/10 text-amber-600 dark:text-amber-400">O‘zbek Adabiyoti</span>
+              <span class="text-xs text-slate-400"><i class="fa-solid fa-file-pdf text-red-500 mr-1"></i> PDF</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white">O‘tkan Kunlar</h3>
+            <p class="text-xs text-brand-600 dark:text-accent-400 font-semibold mb-2">Abdulla Qodiriy</p>
+            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">O‘zbek adabiyotidagi ilk romani. Otabek va Kumushning fojiali sevgi qissasi hamda milliy ma’naviyatimiz aks etgan durdona asar.</p>
+          </div>
+          <button onclick="downloadBook('O‘tkan Kunlar')" class="mt-5 w-full inline-flex items-center justify-center gap-2 bg-slate-100 dark:bg-slate-700 hover:bg-brand-600 hover:text-white dark:hover:bg-brand-600 text-slate-800 dark:text-slate-100 font-semibold text-xs py-2.5 rounded-xl transition-all">
+            <i class="fa-solid fa-download"></i> Mutolaa Qilish (PDF)
+          </button>
+        </div>
+
+        <!-- Book 2 -->
+        <div class="book-card uzbek p-6 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex flex-col justify-between shadow-sm hover:shadow-md transition-all">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-[10px] uppercase font-bold px-2.5 py-1 rounded-md bg-amber-500/10 text-amber-600 dark:text-amber-400">O‘zbek Adabiyoti</span>
+              <span class="text-xs text-slate-400"><i class="fa-solid fa-file-pdf text-red-500 mr-1"></i> PDF</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white">Kecha va Kunduz</h3>
+            <p class="text-xs text-brand-600 dark:text-accent-400 font-semibold mb-2">Abdulhamid Sulaymon o‘g‘li Cho‘lpon</p>
+            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">Jadidchilik harakati va xalqimizning erkinlik sari intilishini ochiq va go‘zal tasvirlab bergan yetuk asarlardan biri.</p>
+          </div>
+          <button onclick="downloadBook('Kecha va Kunduz')" class="mt-5 w-full inline-flex items-center justify-center gap-2 bg-slate-100 dark:bg-slate-700 hover:bg-brand-600 hover:text-white dark:hover:bg-brand-600 text-slate-800 dark:text-slate-100 font-semibold text-xs py-2.5 rounded-xl transition-all">
+            <i class="fa-solid fa-download"></i> Mutolaa Qilish (PDF)
+          </button>
+        </div>
+
+        <!-- Book 3 -->
+        <div class="book-card uzbek p-6 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex flex-col justify-between shadow-sm hover:shadow-md transition-all">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-[10px] uppercase font-bold px-2.5 py-1 rounded-md bg-amber-500/10 text-amber-600 dark:text-amber-400">O‘zbek Adabiyoti</span>
+              <span class="text-xs text-slate-400"><i class="fa-solid fa-file-pdf text-red-500 mr-1"></i> PDF</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white">Dunyoning Ishlari</h3>
+            <p class="text-xs text-brand-600 dark:text-accent-400 font-semibold mb-2">O‘tkir Hoshimov</p>
+            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">Ona mehri, insoniy munosabatlar va hayotning samimiy haqiqatlarini qalbga chuqur yetkazuvchi hikoyalar to‘plami.</p>
+          </div>
+          <button onclick="downloadBook('Dunyoning Ishlari')" class="mt-5 w-full inline-flex items-center justify-center gap-2 bg-slate-100 dark:bg-slate-700 hover:bg-brand-600 hover:text-white dark:hover:bg-brand-600 text-slate-800 dark:text-slate-100 font-semibold text-xs py-2.5 rounded-xl transition-all">
+            <i class="fa-solid fa-download"></i> Mutolaa Qilish (PDF)
+          </button>
+        </div>
+
+        <!-- Book 4 -->
+        <div class="book-card world p-6 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex flex-col justify-between shadow-sm hover:shadow-md transition-all">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-[10px] uppercase font-bold px-2.5 py-1 rounded-md bg-purple-500/10 text-purple-600 dark:text-purple-400">Jahon Adabiyoti</span>
+              <span class="text-xs text-slate-400"><i class="fa-solid fa-file-pdf text-red-500 mr-1"></i> PDF</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white">Kichik Shahzoda</h3>
+            <p class="text-xs text-brand-600 dark:text-accent-400 font-semibold mb-2">Antoine de Saint-Exupéry</p>
+            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">Dunyoning eng ko‘p o‘qilgan, insoniylik, do‘stlik va sadoqat haqida fikr yurituvchi falsafiy ertak-asar.</p>
+          </div>
+          <button onclick="downloadBook('Kichik Shahzoda')" class="mt-5 w-full inline-flex items-center justify-center gap-2 bg-slate-100 dark:bg-slate-700 hover:bg-brand-600 hover:text-white dark:hover:bg-brand-600 text-slate-800 dark:text-slate-100 font-semibold text-xs py-2.5 rounded-xl transition-all">
+            <i class="fa-solid fa-download"></i> Mutolaa Qilish (PDF)
+          </button>
+        </div>
+
+        <!-- Book 5 -->
+        <div class="book-card world p-6 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex flex-col justify-between shadow-sm hover:shadow-md transition-all">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-[10px] uppercase font-bold px-2.5 py-1 rounded-md bg-purple-500/10 text-purple-600 dark:text-purple-400">Jahon Adabiyoti</span>
+              <span class="text-xs text-slate-400"><i class="fa-solid fa-file-pdf text-red-500 mr-1"></i> PDF</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white">Robinzon Kruzo</h3>
+            <p class="text-xs text-brand-600 dark:text-accent-400 font-semibold mb-2">Daniel Defoe</p>
+            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">Kimsa yo‘q orolda matonat va aql-idrok bilan tirik qolgan insonning unutilmas va qiziqarli sarguzashtlari.</p>
+          </div>
+          <button onclick="downloadBook('Robinzon Kruzo')" class="mt-5 w-full inline-flex items-center justify-center gap-2 bg-slate-100 dark:bg-slate-700 hover:bg-brand-600 hover:text-white dark:hover:bg-brand-600 text-slate-800 dark:text-slate-100 font-semibold text-xs py-2.5 rounded-xl transition-all">
+            <i class="fa-solid fa-download"></i> Mutolaa Qilish (PDF)
+          </button>
+        </div>
+
+        <!-- Book 6 -->
+        <div class="book-card world p-6 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 flex flex-col justify-between shadow-sm hover:shadow-md transition-all">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-[10px] uppercase font-bold px-2.5 py-1 rounded-md bg-purple-500/10 text-purple-600 dark:text-purple-400">Jahon Adabiyoti</span>
+              <span class="text-xs text-slate-400"><i class="fa-solid fa-file-pdf text-red-500 mr-1"></i> PDF</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white">Sherlok Xolms Sarguzashtlari</h3>
+            <p class="text-xs text-brand-600 dark:text-accent-400 font-semibold mb-2">Arthur Conan Doyle</p>
+            <p class="text-xs text-slate-500 dark:text-slate-400 leading-relaxed">Mantiqiy fikrlash, deduksiya va detektiv janrining eng zo‘r mashhur asarlaridan biri.</p>
+          </div>
+          <button onclick="downloadBook('Sherlok Xolms')" class="mt-5 w-full inline-flex items-center justify-center gap-2 bg-slate-100 dark:bg-slate-700 hover:bg-brand-600 hover:text-white dark:hover:bg-brand-600 text-slate-800 dark:text-slate-100 font-semibold text-xs py-2.5 rounded-xl transition-all">
+            <i class="fa-solid fa-download"></i> Mutolaa Qilish (PDF)
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
   <!-- ONLINE QUIZ SECTION (10 Math + 10 Physics) -->
   <section id="test" class="py-20">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -920,6 +1053,38 @@
     mobileMenuBtn.addEventListener('click', () => {
       mobileMenu.classList.toggle('hidden');
     });
+
+    // Book Filter Logic
+    function filterBooks(type) {
+      const books = document.querySelectorAll('.book-card');
+      const btnAll = document.getElementById('filter-all');
+      const btnUzbek = document.getElementById('filter-uzbek');
+      const btnWorld = document.getElementById('filter-world');
+
+      // Reset Active button styles
+      [btnAll, btnUzbek, btnWorld].forEach(btn => {
+        btn.className = "px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-slate-200 border border-slate-200 dark:border-slate-700";
+      });
+
+      if(type === 'all') {
+        btnAll.className = "px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-brand-600 text-white shadow-md";
+        books.forEach(b => b.classList.remove('hidden'));
+      } else if(type === 'uzbek') {
+        btnUzbek.className = "px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-brand-600 text-white shadow-md";
+        books.forEach(b => {
+          b.classList.contains('uzbek') ? b.classList.remove('hidden') : b.classList.add('hidden');
+        });
+      } else if(type === 'world') {
+        btnWorld.className = "px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-brand-600 text-white shadow-md";
+        books.forEach(b => {
+          b.classList.contains('world') ? b.classList.remove('hidden') : b.classList.add('hidden');
+        });
+      }
+    }
+
+    function downloadBook(title) {
+      alert(`"${title}" kitobi yuklanmoqda... Mutolaangiz maroqli bo'lsin!`);
+    }
 
     // Quiz Checking Logic
     const correctAnswers = {
